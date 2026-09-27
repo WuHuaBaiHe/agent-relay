@@ -1,18 +1,7 @@
 {
-  "seq": 1,
-  "note": "seq 1 = connectivity self-test; no artifact download involved",
+  "seq": 2,
+  "note": "result-post check",
   "commands": [
-    {
-      "id": "selftest-echo",
-      "exe": "C:\\Windows\\System32\\cmd.exe",
-      "args": ["/c", "echo agent-relay selftest ok"],
-      "timeout": 30
-    },
-    {
-      "id": "selftest-timeout",
-      "exe": "C:\\Windows\\System32\\ping.exe",
-      "args": ["-n", "30", "127.0.0.1"],
-      "timeout": 5
-    }
+    { "id": "post-check", "exe": "C:\\Windows\\System32\\cmd.exe", "args": ["/c", "echo post-check-ran"], "timeout": 30 }
   ]
 }
