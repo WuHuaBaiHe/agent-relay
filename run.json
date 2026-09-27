@@ -1,7 +1,5 @@
 {
-  "seq": 2,
-  "note": "result-post check",
-  "commands": [
-    { "id": "post-check", "exe": "C:\\Windows\\System32\\cmd.exe", "args": ["/c", "echo post-check-ran"], "timeout": 30 }
-  ]
+  "seq": 3,
+  "note": "idle: no commands. Bump seq and add a commands entry to dispatch work.",
+  "commands": []
 }
